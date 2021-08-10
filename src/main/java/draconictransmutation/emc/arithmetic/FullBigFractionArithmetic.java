@@ -1,0 +1,64 @@
+package draconictransmutation.emc.arithmetic;
+
+import org.apache.commons.math3.fraction.BigFraction;
+
+import draconictransmutation.api.mapper.arithmetic.IValueArithmetic;
+import draconictransmutation.utils.Constants;
+
+public class FullBigFractionArithmetic implements IValueArithmetic<BigFraction> {
+
+	@Override
+	public boolean isZero(BigFraction value) {
+		return BigFraction.ZERO.equals(value);
+	}
+
+	@Override
+	public BigFraction getZero() {
+		return BigFraction.ZERO;
+	}
+
+	@Override
+	public BigFraction add(BigFraction a, BigFraction b) {
+		if (isFree(a)) {
+			return b;
+		}
+		if (isFree(b)) {
+			return a;
+		}
+		return a.add(b);
+	}
+
+	@Override
+	public BigFraction mul(long a, BigFraction b) {
+		if (this.isFree(b)) {
+			return getFree();
+		}
+		return b.multiply(a);
+	}
+
+	@Override
+	public BigFraction div(BigFraction a, long b) {
+		if (this.isFree(a)) {
+			return getFree();
+		}
+		if (b == 0) {
+			return BigFraction.ZERO;
+		}
+		BigFraction result = a.divide(b);
+		if (result.getNumerator().compareTo(Constants.MAX_LONG) > 0 || result.getDenominator().compareTo(Constants.MAX_LONG) > 0) {
+			//Overflowed a long as BigFraction can go past Long.MAX_VALUE
+			return BigFraction.ZERO;
+		}
+		return result;
+	}
+
+	@Override
+	public BigFraction getFree() {
+		return new BigFraction(Constants.FREE_ARITHMETIC_VALUE);
+	}
+
+	@Override
+	public boolean isFree(BigFraction value) {
+		return value.getNumeratorAsLong() == Constants.FREE_ARITHMETIC_VALUE;
+	}
+}

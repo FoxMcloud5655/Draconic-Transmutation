@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "draconictransmutation:block/transmutation_table",
+      "x": 180
+    },
+    "facing=up": {
+      "model": "draconictransmutation:block/transmutation_table"
+    },
+    "facing=north": {
+      "model": "draconictransmutation:block/transmutation_table",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "draconictransmutation:block/transmutation_table",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "draconictransmutation:block/transmutation_table",
+      "x": 90,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "draconictransmutation:block/transmutation_table",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

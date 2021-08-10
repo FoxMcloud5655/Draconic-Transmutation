@@ -4,19 +4,22 @@ import java.io.StringReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import moze_intel.projecte.api.nss.NSSCreator;
-import moze_intel.projecte.api.nss.NSSFake;
-import moze_intel.projecte.api.nss.NSSItem;
-import moze_intel.projecte.emc.json.NSSSerializer;
-import moze_intel.projecte.emc.mappers.customConversions.json.ConversionGroup;
-import moze_intel.projecte.emc.mappers.customConversions.json.CustomConversion;
-import moze_intel.projecte.emc.mappers.customConversions.json.CustomConversionFile;
-import moze_intel.projecte.utils.Constants;
+
 import net.minecraft.util.ResourceLocation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import draconictransmutation.api.nss.NSSCreator;
+import draconictransmutation.api.nss.NSSFake;
+import draconictransmutation.api.nss.NSSItem;
+import draconictransmutation.emc.json.NSSSerializer;
+import draconictransmutation.emc.mappers.customConversions.CustomConversionMapper;
+import draconictransmutation.emc.mappers.customConversions.json.ConversionGroup;
+import draconictransmutation.emc.mappers.customConversions.json.CustomConversion;
+import draconictransmutation.emc.mappers.customConversions.json.CustomConversionFile;
+import draconictransmutation.utils.Constants;
 
 @DisplayName("Test Custom Conversion Mappers")
 class CustomConversionMapperTest {

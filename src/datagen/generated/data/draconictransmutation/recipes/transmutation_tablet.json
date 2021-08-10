@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DSD",
+    "STS",
+    "DSD"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:stone"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "T": {
+      "item": "draconictransmutation:transmutation_table"
+    }
+  },
+  "result": {
+    "item": "draconictransmutation:transmutation_tablet"
+  }
+}

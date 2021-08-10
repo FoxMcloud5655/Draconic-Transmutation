@@ -1,0 +1,50 @@
+{
+  "windmagic": {
+    "subtitle": "sound_event.draconictransmutation.windmagic",
+    "sounds": [
+      "draconictransmutation:item/pewindmagic"
+    ]
+  },
+  "watermagic": {
+    "subtitle": "sound_event.draconictransmutation.watermagic",
+    "sounds": [
+      "draconictransmutation:item/pewatermagic"
+    ]
+  },
+  "power": {
+    "subtitle": "sound_event.draconictransmutation.power",
+    "sounds": [
+      "draconictransmutation:item/pepower"
+    ]
+  },
+  "heal": {
+    "subtitle": "sound_event.draconictransmutation.heal",
+    "sounds": [
+      "draconictransmutation:item/peheal"
+    ]
+  },
+  "destruct": {
+    "subtitle": "sound_event.draconictransmutation.destruct",
+    "sounds": [
+      "draconictransmutation:item/pedestruct"
+    ]
+  },
+  "charge": {
+    "subtitle": "sound_event.draconictransmutation.charge",
+    "sounds": [
+      "draconictransmutation:item/pecharge"
+    ]
+  },
+  "uncharge": {
+    "subtitle": "sound_event.draconictransmutation.uncharge",
+    "sounds": [
+      "draconictransmutation:item/peuncharge"
+    ]
+  },
+  "transmute": {
+    "subtitle": "sound_event.draconictransmutation.transmute",
+    "sounds": [
+      "draconictransmutation:item/petransmute"
+    ]
+  }
+}

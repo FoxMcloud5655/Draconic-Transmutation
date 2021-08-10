@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "draconictransmutation:transmutation_table"
+    ]
+  },
+  "criteria": {
+    "has_philo_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "draconictransmutation:philosophers_stone"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "draconictransmutation:transmutation_table"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_philo_stone",
+      "has_the_recipe"
+    ]
+  ]
+}

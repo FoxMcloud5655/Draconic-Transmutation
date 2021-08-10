@@ -1,12 +1,16 @@
 package moze_intel.projecte.emc.json;
 
 import com.google.gson.JsonParseException;
+
+import draconictransmutation.api.nss.NSSCreator;
+import draconictransmutation.api.nss.NSSFake;
+import draconictransmutation.api.nss.NSSFluid;
+import draconictransmutation.api.nss.NSSItem;
+import draconictransmutation.emc.json.NSSSerializer;
+
 import java.util.HashMap;
 import java.util.Map;
-import moze_intel.projecte.api.nss.NSSCreator;
-import moze_intel.projecte.api.nss.NSSFake;
-import moze_intel.projecte.api.nss.NSSFluid;
-import moze_intel.projecte.api.nss.NSSItem;
+
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.ResourceLocation;
 import org.junit.jupiter.api.Assertions;

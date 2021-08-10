@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "draconictransmutation:philosophers_stone"
+    },
+    "title": {
+      "translate": "misc.draconictransmutation.mod_name"
+    },
+    "description": {
+      "translate": "advancements.draconictransmutation.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "philstone_recipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:glowstone_dust"
+          },
+          {
+            "item": "minecraft:diamond"
+          },
+          {
+            "item": "minecraft:redstone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "philstone_recipe"
+    ]
+  ]
+}

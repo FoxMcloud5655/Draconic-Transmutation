@@ -1,30 +1,30 @@
 modLoader="javafml"
 loaderVersion="${loader_version}"
-issueTrackerURL="https://github.com/sinkillerj/ProjectE/issues"
+issueTrackerURL="https://github.com/FoxMcloud5655/DraconicTransmutation/issues"
 license="MIT"
 
 [[mods]]
-  modId="projecte"
+  modId="draconictransmutation"
   version="${version}"
-  displayName="ProjectE"
-  updateJSONURL="https://raw.githubusercontent.com/sinkillerj/ProjectE/mc1.16.x/update.json"
-  displayURL="https://github.com/sinkillerj/ProjectE"
+  displayName="Draconic Transmutation"
+  updateJSONURL="https://raw.githubusercontent.com/FoxMcloud5655/DraconicTransmutation/mc1.16.x/update.json"
+  displayURL="https://github.com/FoxMcloud5655/DraconicTransmutation"
   logoFile="logo.png"
-  authors="SinKillerJ, MaPePeR, williewillus, Lilylicious, pupnewfster"
-  credits="EE2 creator - x3n0ph0b3, EE2 GUI Textures - MidnightLightning, Former Texture Artist - Magic Banana"
-  description='''A complete rewrite of EE2 for modern Minecraft versions.'''
+  authors="FoxMcloud5655"
+  credits="ProjectE creators - SinKillerJ, MaPePeR, williewillus, Lilylicious, pupnewfster, EE2 creator - x3n0ph0b3, EE2 GUI Textures - MidnightLightning, Former Texture Artist - Magic Banana"
+  description='''A port of ProjectE/EE2 that aims to provide a lightweight balanced alternative to transmutation through the combined use of magic and draconic inspired tech.'''
 
-[[dependencies.projecte]]
+[[dependencies.draconictransmutation]]
   modId="minecraft"
   mandatory=true
   versionRange="${mc_version}"
   side="BOTH"
-[[dependencies.projecte]]
+[[dependencies.draconictransmutation]]
   modId="forge"
   mandatory=true
   versionRange="${forge_version}"
   side="BOTH"
-[[dependencies.projecte]]
+[[dependencies.draconictransmutation]]
   modId="crafttweaker"
   mandatory=false
   versionRange="${crafttweaker_version}"

@@ -1,16 +1,20 @@
 package moze_intel.projecte.emc;
 
 import com.google.common.collect.ImmutableMap;
+
+import draconictransmutation.api.mapper.arithmetic.IValueArithmetic;
+import draconictransmutation.api.mapper.collector.IExtendedMappingCollector;
+import draconictransmutation.api.mapper.generator.IValueGenerator;
+import draconictransmutation.emc.SimpleGraphMapper;
+import draconictransmutation.emc.arithmetic.FullBigFractionArithmetic;
+import draconictransmutation.emc.arithmetic.HiddenBigFractionArithmetic;
+import draconictransmutation.emc.collector.LongToBigFractionCollector;
+import draconictransmutation.emc.generator.BigFractionToLongGenerator;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Map;
-import moze_intel.projecte.api.mapper.arithmetic.IValueArithmetic;
-import moze_intel.projecte.api.mapper.collector.IExtendedMappingCollector;
-import moze_intel.projecte.api.mapper.generator.IValueGenerator;
-import moze_intel.projecte.emc.arithmetic.FullBigFractionArithmetic;
-import moze_intel.projecte.emc.arithmetic.HiddenBigFractionArithmetic;
-import moze_intel.projecte.emc.collector.LongToBigFractionCollector;
-import moze_intel.projecte.emc.generator.BigFractionToLongGenerator;
+
 import org.apache.commons.math3.fraction.BigFraction;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

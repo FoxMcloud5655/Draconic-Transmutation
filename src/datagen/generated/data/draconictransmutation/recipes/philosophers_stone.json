@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "draconictransmutation:philosophers_stone",
+  "pattern": [
+    "RGR",
+    "GDG",
+    "RGR"
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "G": {
+      "tag": "forge:dusts/glowstone"
+    },
+    "D": {
+      "tag": "forge:gems/diamond"
+    }
+  },
+  "result": {
+    "item": "draconictransmutation:philosophers_stone"
+  }
+}

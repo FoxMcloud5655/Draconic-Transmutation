@@ -1,0 +1,35 @@
+{
+  "parent": "draconictransmutation:root",
+  "display": {
+    "icon": {
+      "item": "draconictransmutation:philosophers_stone"
+    },
+    "title": {
+      "translate": "advancements.draconictransmutation.philo_stone"
+    },
+    "description": {
+      "translate": "advancements.draconictransmutation.philo_stone.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "philosophers_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "draconictransmutation:philosophers_stone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "philosophers_stone"
+    ]
+  ]
+}
